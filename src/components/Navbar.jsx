@@ -39,20 +39,20 @@ export const Navbar = () => {
         </ul>
 
         {/* Social media icons */}
-        <div className="flex fixed flex-col top-[35%] left-0">
+        <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
             <ul>
                 <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
-                    <a className="flex justify-between items-center w-full text-gray-300" href="/">
+                    <a className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/tomas-ocampo-753910212/">
                         Linkedin <FaLinkedin size={ 30 } />
                     </a>
                 </li>
                 <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-800">
-                    <a className="flex justify-between items-center w-full text-gray-300" href="/">
+                    <a className="flex justify-between items-center w-full text-gray-300" href="https://github.com/ocampott">
                         Github <FaGithub size={ 30 } />
                     </a>
                 </li>
                 <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-cyan-500">
-                    <a className="flex justify-between items-center w-full text-gray-300" href="/">
+                    <a className="flex justify-between items-center w-full text-gray-300" href="https://twitter.com/ocampott">
                         Twitter <FaTwitter size={ 30 } />
                     </a>
                 </li>
