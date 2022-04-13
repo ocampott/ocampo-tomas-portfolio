@@ -1,32 +1,32 @@
 import React from 'react'
 
-export const ImagesDiv = () => {
+export const IndividualSkills = () => {
 
     const images = [
         {id: 1,
         name: "HTML",
-        img: './html.png'},
+        img: "./assets/html.png"},
         {id: 2,
         name: "CSS",
-        img: "./css.png"},
+        img: "./assets/css.png"},
         {id: 3,
         name: "Javascript",
-        img: "./javascript.png"},
+        img: "./assets/javascript.png"},
         {id: 4,
         name: "React",
-        img: "./react.png"},
+        img: "./assets/react.png"},
         {id: 5,
         name: "Github",
-        img: "./github.png"},
+        img: "./assets/github.png"},
         {id: 6,
-        name: "Node JS",
-        img: "./node.png"},
+        name: "Bootstrap",
+        img: "./assets/bootstrap.png"},
         {id: 7,
         name: "Tailwind",
-        img: "./tailwind.png"},
+        img: "./assets/tailwind.png"},
         {id: 8,
         name: "SASS",
-        img: "./sass.png"}
+        img: "./assets/sass.png"}
     ]
 
     return (
