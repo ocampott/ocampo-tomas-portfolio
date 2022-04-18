@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
-import Logo from '../assets/logo.png'
-import { FaBars, FaTimes, FaLinkedin, FaGithub, FaTwitter  } from 'react-icons/fa'
-import { Link } from 'react-scroll'
+import React, { useState } from 'react';
+import Logo from '../assets/logo.png';
+import { FaBars, FaTimes, FaLinkedin, FaGithub, FaTwitter  } from 'react-icons/fa';
+import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next';
 
 export const Navbar = () => {
+
+    const { t } = useTranslation()
 
     const [nav, setNav] = useState(false);
     const handleClick = () => { setNav(!nav) }
@@ -11,26 +14,28 @@ export const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
         <div>
-            <img src={ Logo } alt="Logo img" style={{width: '100px'}} />
+            <Link to="home" smooth={true} duration={500}>
+            <img src={ Logo } alt="Logo img" style={{width: '100px', cursor: 'pointer'}} />
+            </Link>
         </div>
 
         {/* Desktop menu */}
         <div className="hidden md:flex">
             <ul className="hidden md:flex">
                 <li>
-                <Link to="home" smooth={true} duration={500}>Home</Link>
+                <Link to="home" smooth={true} duration={500}>{t("navbar.home")}</Link>
                 </li>
                 <li>
-                <Link to="about-me" smooth={true} duration={500}>About me</Link>
+                <Link to="about-me" smooth={true} duration={500}>{t("navbar.about-me")}</Link>
                 </li>
                 <li>
-                <Link to="skills" smooth={true} duration={500}>Skills</Link>
+                <Link to="skills" smooth={true} duration={500}>{t("navbar.skills")}</Link>
                 </li>
                 <li>
-                <Link to="projects" smooth={true} duration={500}>Projects</Link>
+                <Link to="projects" smooth={true} duration={500}>{t("navbar.projects")}</Link>
                 </li>
                 <li>
-                <Link to="contact" smooth={true} duration={500}>Contact</Link>
+                <Link to="contact" smooth={true} duration={500}>{t("navbar.contact")}</Link>
                 </li>
             </ul>
         </div>
