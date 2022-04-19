@@ -38,8 +38,8 @@ export const Navbar = () => {
                 <li>
                 <Link to="contact" smooth={true} duration={500}>{t("navbar.contact")}</Link>
                 </li>
-                <li onClick={() => changeLanguage('es')}>ES</li>
-                <li onClick={() => changeLanguage('en')}>EN</li>
+                <li onClick={() => {changeLanguage('es')}}>ES</li>
+                <li onClick={() => {changeLanguage('en')}}>EN</li>
             </ul>
         </div>
 
@@ -65,8 +65,8 @@ export const Navbar = () => {
             <li className="py-6 text-4xl">
             <Link onClick={handleClick} to="contact" smooth={true} duration={500}>Contact</Link>
             </li>
-            <li className="py-6 text-4xl" onClick={() => changeLanguage('es')}>ES</li>
-            <li className="py-6 text-4xl" onClick={() => changeLanguage('en')}>EN</li>
+            <li className="py-6 text-4xl" onClick={() => {changeLanguage('es'); handleClick();}}>ES</li>
+            <li className="py-6 text-4xl" onClick={() => {changeLanguage('en'); handleClick();}}>EN</li>
         </ul>
 
         {/* Social media icons */}
