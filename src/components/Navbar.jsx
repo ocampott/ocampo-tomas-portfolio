@@ -6,7 +6,8 @@ import { useTranslation } from 'react-i18next';
 
 export const Navbar = () => {
 
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation()
+    const changeLanguage = lng => {i18n.changeLanguage(lng)}
 
     const [nav, setNav] = useState(false);
     const handleClick = () => { setNav(!nav) }
@@ -37,6 +38,8 @@ export const Navbar = () => {
                 <li>
                 <Link to="contact" smooth={true} duration={500}>{t("navbar.contact")}</Link>
                 </li>
+                <li onClick={() => changeLanguage('es')}>ES</li>
+                <li onClick={() => changeLanguage('en')}>EN</li>
             </ul>
         </div>
 
@@ -62,6 +65,8 @@ export const Navbar = () => {
             <li className="py-6 text-4xl">
             <Link onClick={handleClick} to="contact" smooth={true} duration={500}>Contact</Link>
             </li>
+            <li className="py-6 text-4xl" onClick={() => changeLanguage('es')}>ES</li>
+            <li className="py-6 text-4xl" onClick={() => changeLanguage('en')}>EN</li>
         </ul>
 
         {/* Social media icons */}
