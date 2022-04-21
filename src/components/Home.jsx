@@ -23,7 +23,7 @@ export const Home = () => {
                     </button>
                 </Link>
                 <button className="text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-yellow-300 hover:border-yellow-300">
-                    <a href={CV} download="CV">{t("home.boton-2")}</a>
+                    <a href={CV} download="CV Ocampo Tomas">{t("home.boton-2")}</a>
                 </button>
             </div>
         </div>
