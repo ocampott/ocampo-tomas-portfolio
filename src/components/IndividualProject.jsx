@@ -1,16 +1,17 @@
 import React from "react";
 import OrtopediaVidaPage from '../assets/ortopediavida.jpg';
 import ToDoList from "../assets/todolist.jpg"
+import ShoppingCart from "../assets/shopping-cart-practice.jpg"
 
 export const IndividualProject = () => {
 
   const projects = [
     { id: 1, name: "Ortopedia Vida Page", img: OrtopediaVidaPage, demo: 'https://ocampott.github.io/ortopedia-vida-webpage-coder/', code: 'https://github.com/ocampott/ortopedia-vida-webpage-coder'},
     { id: 2, name: "To do list App", img: ToDoList, demo: 'https://ocampott.github.io/lista-de-tareas-app-react/', code: 'https://github.com/ocampott/lista-de-tareas-app-react' },
-    { id: 3, name: "Ortopedia Vida Page", img: OrtopediaVidaPage, demo: 'https://ocampott.github.io/ortopedia-vida-webpage-coder/', code: 'https://github.com/ocampott/ortopedia-vida-webpage-coder' },
-    { id: 4, name: "To do list App", img: ToDoList, demo: 'https://ocampott.github.io/lista-de-tareas-app-react/', code: 'https://github.com/ocampott/lista-de-tareas-app-react'},
-    { id: 5, name: "Ortopedia Vida Page", img: OrtopediaVidaPage, demo: 'https://ocampott.github.io/ortopedia-vida-webpage-coder/', code: 'https://github.com/ocampott/ortopedia-vida-webpage-coder' },
-    { id: 6, name: "To do list App", img: ToDoList, demo: 'https://ocampott.github.io/lista-de-tareas-app-react/', code: 'https://github.com/ocampott/lista-de-tareas-app-react'},
+    { id: 3, name: "Shopping cart", img: ShoppingCart, demo: 'https://ocampott.github.io/shopping-cart-practice/', code: 'https://github.com/ocampott/shopping-cart-practice' },
+    { id: 4, name: "Shopping cart", img: ShoppingCart, demo: 'https://ocampott.github.io/shopping-cart-practice/', code: 'https://github.com/ocampott/shopping-cart-practice' },
+    { id: 5, name: "To do list App", img: ToDoList, demo: 'https://ocampott.github.io/lista-de-tareas-app-react/', code: 'https://github.com/ocampott/lista-de-tareas-app-react'},
+    { id: 6, name: "Ortopedia Vida Page", img: OrtopediaVidaPage, demo: 'https://ocampott.github.io/ortopedia-vida-webpage-coder/', code: 'https://github.com/ocampott/ortopedia-vida-webpage-coder'}
   ];
 
   return (
